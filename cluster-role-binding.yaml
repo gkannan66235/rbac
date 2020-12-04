@@ -2,14 +2,14 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: dev-role-binding
+  name: svc-clusterrole-binding
   # namespace: default
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: dev
+  name: app
 subjects:
-- kind: User
-  name: gk
+- kind: ServiceAccount
+  name: endgame
   # namespace: default
 

@@ -9,7 +9,7 @@ roleRef:
   kind: Role
   name: dev
 subjects:
-- kind: ServiceAccount
-  name: endgame
+- kind: User
+  name: gk
   namespace: default
 
